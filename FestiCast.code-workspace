@@ -1,0 +1,39 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+        "editor.fontSize": 13,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "files.autoSave": "afterDelay",
+        "terminal.integrated.defaultProfile.windows": "PowerShell",
+        "workbench.colorTheme": "Default Light Modern",
+        "editor.minimap.enabled": false,
+        "python.analysis.autoImportCompletions": true
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Run FestiCast",
+                "type": "python",
+                "request": "launch",
+                "module": "streamlit",
+                "args": ["run", "app.py", "--server.port=8501"],
+                "jinja": true,
+                "justMyCode": false
+            }
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-toolsai.jupyter"
+        ]
+    }
+}
